@@ -1,0 +1,25 @@
+.DailyForecast-Container {
+  padding: 0 10px 0 10px;
+  margin: 0 10px 0 10px;
+}
+.DailyForecast {
+  text-align: center;
+}
+.DailyForecast-day {
+  padding-bottom: 10px;
+}
+.DailyForecast-temperature-max {
+  font-weight: bold;
+}
+.DailyForecast-temperature-min {
+  opacity: 0.8;
+  margin-left: 5px;
+}
+@media (max-width: 550px) {
+  .col-sm {
+    width: 16%;
+  }
+  .DailyForecast-temperature-min {
+    margin-left: -1px;
+  }
+}

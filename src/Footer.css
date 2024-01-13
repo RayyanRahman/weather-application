@@ -1,0 +1,14 @@
+p {
+  text-align: center;
+  font-size: 12px;
+  padding-top: 15px;
+}
+
+.linkedinProfile {
+  color: #cc4949;
+  text-decoration: none;
+}
+
+.linkedinProfile:hover {
+  text-decoration: underline;
+}

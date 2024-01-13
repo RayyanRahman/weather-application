@@ -1,0 +1,255 @@
+:root {
+  --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  --primary-color: #faf6d0;
+  --secondary-color: #205682;
+  --third-color: #aedceb;
+  --fourth-color: #cc4949;
+}
+body {
+  background-image: var(--primary-color);
+
+  font-family: Arial, sans-serif;
+  color: var(--secondary-color);
+}
+
+.wrapper {
+  padding: 20px 0;
+}
+.container {
+  background-color: var(--third-color);
+  border-radius: 5px;
+  box-shadow: var(--box-shadow);
+  /* border: 1px solid rgba(255, 255, 255, 0.3); */
+  border: 1px solid var(--fourth-color);
+  max-height: 530px;
+  max-width: 650px;
+  margin: 60px auto 0;
+  padding: 16px;
+}
+.outerIcon1 {
+  display: flex;
+  position: relative;
+  top: -60px;
+  left: -20px;
+  font-size: 50px;
+}
+.outerIcon2 {
+  display: flex;
+  position: relative;
+  top: -100px;
+  left: 35px;
+  font-size: 40px;
+}
+.form-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-top: -100px;
+}
+.form-container form {
+  padding: 20px 20px -10px 20px;
+}
+.searchBar {
+  width: 426px;
+  padding: 12px;
+  margin-left: 20px;
+  background-color: var(--primary-color);
+  border: 1px solid var(--fourth-color);
+  border-radius: 5px;
+}
+.search-btn {
+  display: flex;
+  position: relative;
+  left: 460px;
+  top: -48px;
+  padding: 12px;
+  font-size: 15px;
+  border-radius: 5px;
+  transition: all 200ms ease-in-out;
+  color: #f5feff;
+  background: var(--secondary-color);
+  border: 1px solid var(--secondary-color);
+}
+.location-btn {
+  display: flex;
+  position: relative;
+  top: -1px;
+  left: 80px;
+  padding: 16px;
+  border: 1px solid var(--secondary-color);
+  border-radius: 5px;
+  transition: all 200ms ease-in-out;
+  color: #fff;
+  background-color: var(--secondary-color);
+}
+.search-btn:hover {
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
+  border: 1px solid var(--secondary-color);
+}
+.location-btn:hover {
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
+  border: 1px solid var(--secondary-color);
+}
+
+.tempInfo-container {
+  margin-top: 30px;
+  margin-left: 20px;
+}
+.tempInfo-container h1 {
+  display: flex;
+  position: relative;
+  top: -50px;
+  font-size: 40px;
+  font-weight: bolder;
+  color: var(--fourth-color);
+}
+.tempInfo-container li {
+  display: flex;
+  position: relative;
+  top: -55px;
+  font-size: large;
+  font-weight: bold;
+}
+.tempInfo-container p {
+  display: flex;
+  position: relative;
+  top: -55px;
+  /* font-size: large; */
+  font-weight: bold;
+}
+.tempInfo-container .animatedIcon {
+  margin-top: -40px;
+}
+.tempInfo-container .tempNumber {
+  display: flex;
+  position: relative;
+  top: -45px;
+  font-size: 65px;
+}
+.tempInfo-container .units {
+  display: flex;
+  position: relative;
+  left: 55px;
+  top: -140px;
+  vertical-align: top;
+}
+.tempInfo-container .min {
+  position: fixed;
+  left: 50%;
+  top: 170px;
+}
+.tempInfo-container .max {
+  position: fixed;
+  left: 50%;
+  top: 200px;
+}
+.tempInfo-container .active {
+  color: var(--fourth-color);
+  cursor: default;
+  font-size: large;
+  text-decoration: none;
+}
+
+.Weather .active:hover {
+  text-decoration: none;
+}
+.Weather a {
+  text-decoration: none;
+  color: var(--fourth-color);
+}
+
+.forecast-container {
+  text-align: center;
+  background-color: var(--primary-color);
+  padding: 20px;
+  margin: 20px;
+  margin-top: -50px;
+  border-radius: 5px;
+  border: 1px solid var(--fourth-color);
+}
+
+.forecast {
+  display: flex;
+  justify-content: space-around;
+}
+.forecastIcons {
+  font-size: 25px;
+  padding-bottom: 10px;
+  color: var(--secondary-color);
+  display: block;
+  margin: 0 auto;
+}
+
+@media (max-width: 960px) {
+  .container {
+    width: 100%;
+    max-height: 100%;
+  }
+  .outerIcon1 {
+    left: -20px;
+  }
+  .outerIcon2 {
+    left: 35px;
+  }
+  .searchBar {
+    width: 420px;
+  }
+  .tempInfo-container {
+    margin-top: 60px;
+  }
+  .tempInfo-container h1 {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 550px) {
+  .searchBar {
+    width: 200px;
+    padding: 10px;
+  }
+  .search-btn {
+    padding: 10px;
+    font-size: 14px;
+    top: -44px;
+    left: 230px;
+  }
+  .location-btn {
+    padding: 14px;
+    font-size: 14px;
+    top: -1px;
+    left: 260px;
+  }
+  .tempInfo-container {
+    margin-top: 20px;
+  }
+  .tempInfo-container h1 {
+    font-size: 35px;
+  }
+  .tempInfo-container li {
+    font-size: 12px;
+  }
+  .tempInfo-container .animatedIcon {
+    display: flex;
+    position: relative;
+    top: -80px;
+    left: 195px;
+  }
+  .tempInfo-container .tempNumber {
+    font-size: 50px;
+    display: flex;
+    position: relative;
+    top: -140px;
+    left: 265px;
+  }
+  .tempInfo-container .units {
+    display: flex;
+    position: relative;
+    top: -220px;
+    left: 300px;
+  }
+  .forecast-container {
+    margin-top: -140px;
+  }
+}
